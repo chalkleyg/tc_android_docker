@@ -47,4 +47,7 @@ RUN apt update && \
     apt install -y powershell
     ##################################################
 
+RUN apt update && \
+    apt install openjdk-11-jre-headless openjdk-11-jdk openjdk-17-jdk openjdk-17-jre -y
+
 RUN apt-get clean
